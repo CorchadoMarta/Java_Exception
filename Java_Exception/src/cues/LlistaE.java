@@ -15,7 +15,6 @@ public class LlistaE implements Cua{
 
 	@Override
 	public void encuar(Object item) {
-		// TODO Auto-generated method stub
 		Node nou = new Node(item);
 		if (mida == 0){
 			this.head = nou;
@@ -31,9 +30,10 @@ public class LlistaE implements Cua{
 	@Override
 	public Object desencuar() {
 		Node eliminat;
-		if()
+		
 		if (mida == 0){
 			eliminat = null;
+			throw new AllertNulls("Error: la cua ja es buida");
 		}
 		else {
 			eliminat = head;
